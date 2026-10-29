@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Guangjun Ou is a SLAM engineer working on robot localization, mapping, and multi-sensor fusion. Explore the Leg-KILO project and RA-L publication." />
+  <title>Guangjun Ou · SLAM Engineer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header container">
+    <a class="site-name" href="#home">Guangjun Ou</a>
+    <a href="https://github.com/ouguangjun" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </header>
+
+  <main id="main" class="container">
+    <section class="intro" id="home" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <h1 id="intro-title">Guangjun Ou <span class="chinese-name" lang="zh-CN">区广峻</span></h1>
+        <p class="role">SLAM Engineer</p>
+        <!-- Edit your personal introduction here. -->
+        <p>Hi, I'm Guangjun Ou. I work on robot localization and mapping, multi-sensor fusion, and state estimation for legged robots.</p>
+        <p>I received my master's degree from Guangdong University of Technology in 2025. My current work focuses on robotics algorithm development and deployment in real-world systems. Here I share my open-source projects and research.</p>
+        <div class="intro-links">
+          <a href="mailto:ouguangjun98@gmail.com">Email</a>
+          <a href="https://github.com/ouguangjun" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://orcid.org/0009-0007-0457-6276" target="_blank" rel="noopener noreferrer">ORCID</a>
+        </div>
+      </div>
+      <!-- Currently using your GitHub avatar. Replace src with your own photo. -->
+      <img class="portrait" src="assets/avatar.jpg" alt="Portrait of Guangjun Ou" width="460" height="460" fetchpriority="high" />
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title"><span aria-hidden="true">🛠️</span> Projects</h2>
+      <article class="project">
+        <div class="project-gallery" role="group" aria-label="Leg-KILO mapping results">
+          <a class="project-image-link" href="assets/backpack.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size Backpack mapping result">
+            <img class="project-image" src="assets/backpack.png" alt="Leg-KILO point cloud map and trajectory on the Backpack dataset" width="1893" height="929" loading="lazy" decoding="async" />
+          </a>
+          <a class="project-image-link" href="assets/superloc.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size SuperLoc mapping result">
+            <img class="project-image" src="assets/superloc.png" alt="Leg-KILO point cloud map and trajectory on the SuperLoc dataset" width="1893" height="935" loading="lazy" decoding="async" />
+          </a>
+          <a class="project-image-link" href="assets/nclt2.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size NCLT mapping result">
+            <img class="project-image" src="assets/nclt2.png" alt="Leg-KILO point cloud map and trajectory on the NCLT dataset" width="1893" height="939" loading="lazy" decoding="async" />
+          </a>
+          <a class="project-image-link" href="assets/diter.png" target="_blank" rel="noopener noreferrer" aria-label="View the full-size DiTer mapping result">
+            <img class="project-image" src="assets/diter.png" alt="Leg-KILO point cloud map and trajectory on the DiTer dataset" width="1900" height="947" loading="lazy" decoding="async" />
+          </a>
+        </div>
+        <div class="project-copy">
+          <h3><a href="https://github.com/ouguangjun/Leg-KILO" target="_blank" rel="noopener noreferrer">Leg-KILO / kilo-map</a></h3>
+          <p>An open-source SLAM system for robot localization and mapping. The current version fuses LiDAR and IMU measurements with an ESKF frontend and a factor graph backend, supporting loop closure, map export, and ROS 1 / ROS 2.</p>
+          <p class="project-context">The project originated from research on kinematic, inertial, and LiDAR fusion for legged robots and continues to evolve.</p>
+          <div class="work-links"><a href="https://github.com/ouguangjun/Leg-KILO" target="_blank" rel="noopener noreferrer">Code</a><a href="https://github.com/ouguangjun/legkilo-dataset" target="_blank" rel="noopener noreferrer">Dataset</a></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="publications" aria-labelledby="publications-title">
+      <h2 id="publications-title"><span aria-hidden="true">📄</span> Publications</h2>
+      <article class="publication">
+        <a class="publication-image-link" href="assets/leg-kilo.jpg" target="_blank" rel="noopener noreferrer" aria-label="View the full-size Leg-KILO mapping result">
+          <img class="publication-image" src="assets/leg-kilo.jpg" alt="Leg-KILO point cloud map with the estimated robot trajectory and loop closure constraints" width="1898" height="947" loading="lazy" decoding="async" />
+        </a>
+        <div class="publication-copy">
+          <h3><a href="https://doi.org/10.1109/LRA.2024.3440730" target="_blank" rel="noopener noreferrer">Leg-KILO: Robust Kinematic-Inertial-Lidar Odometry for Dynamic Legged Robots</a></h3>
+          <p class="authors"><strong>Guangjun Ou</strong>, Dong Li, Hanmin Li</p>
+          <p class="venue">IEEE Robotics and Automation Letters (RA-L), 2024</p>
+          <p class="publication-summary">A multi-sensor fusion odometry framework for dynamic legged robots, combining leg kinematics, inertial measurements, and LiDAR to improve the robustness of localization and mapping.</p>
+          <div class="work-links"><a href="https://ieeexplore.ieee.org/document/10631676" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/ouguangjun/Leg-KILO" target="_blank" rel="noopener noreferrer">Code</a></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title"><span aria-hidden="true">✉️</span> Contact</h2>
+      <p>Feel free to reach out about SLAM, robotics, or related projects.</p>
+      <dl class="contact-list">
+        <div><dt>Email</dt><dd><a href="mailto:ouguangjun98@gmail.com">ouguangjun98@gmail.com</a></dd></div>
+        <div><dt>GitHub</dt><dd><a href="https://github.com/ouguangjun" target="_blank" rel="noopener noreferrer">github.com/ouguangjun</a></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="container site-footer"><p>© <span id="year">2026</span> Guangjun Ou</p></footer>
+</body>
+</html>
