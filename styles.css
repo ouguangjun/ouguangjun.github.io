@@ -24,6 +24,8 @@ img { display: block; max-width: 100%; }
 .intro { display: grid; grid-template-columns: minmax(0,1fr) 240px; align-items: center; gap: 85px; padding-block: 65px 82px; }
 h1 { font-size: clamp(34px,4vw,44px); line-height: 1.3; font-weight: 600; letter-spacing: -1px; }
 .chinese-name { display: inline-block; margin-left: 10px; font-size: .65em; font-weight: 400; letter-spacing: 0; white-space: nowrap; }
+.chinese-name ruby { ruby-position: over; ruby-align: center; }
+.chinese-name rt { font-size: .45em; font-weight: 400; line-height: 1; }
 .role { margin: 10px 0 25px; font-size: 17px; }
 .intro-copy > p:not(.role) { color: var(--secondary); max-width: 590px; }
 .intro-copy > p + p:not(.role) { margin-top: 13px; }
@@ -42,6 +44,8 @@ h3 a:hover { text-decoration: underline; }
 .project-heading { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
 .star-badge { display: inline-flex; align-items: center; text-decoration: none; }
 .star-badge img { height: 20px; width: auto; }
+.license-badge { display: inline-flex; align-items: center; height: 20px; padding: 0 7px; border: 1px solid #ccc; border-radius: 3px; color: var(--text); background: #fff; font-size: 11px; font-weight: 500; line-height: 1; text-decoration: none; }
+.license-badge:hover { border-color: #777; }
 .project-copy > p { color: var(--secondary); margin-top: 12px; font-size: 14px; }
 .project-copy .project-context { font-size: 13px; }
 .work-links { display: flex; flex-wrap: wrap; gap: 23px; margin-top: 16px; font-size: 13px; }
