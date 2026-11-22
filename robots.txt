@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ouguangjun.github.io/sitemap.xml
